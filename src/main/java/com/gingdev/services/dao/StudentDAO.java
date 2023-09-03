@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,8 +16,7 @@ public class StudentDAO implements IDAO<Student> {
     public Student createOrUpdate(Student t) throws SQLException {
         Connection conn = DB.getConn();
         if (t.getId() == null) {
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO student (name, age) VALUES (?, ?)",
-                    Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO student (name, age) VALUES (?, ?)");
             stmt.setString(1, t.getName());
             stmt.setInt(2, t.getAge());
 
