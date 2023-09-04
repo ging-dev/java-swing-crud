@@ -8,12 +8,12 @@ public class Student {
 
     }
 
-    public Student(final String name, final Integer age) {
+    public Student(String name, Integer age) {
         this.name = name;
         this.age = age;
     }
 
-    public Student(final Integer id, final String name, final Integer age) {
+    public Student(Integer id, String name, Integer age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -23,7 +23,7 @@ public class Student {
         return id;
     }
 
-    public void setId(final Integer id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -31,7 +31,7 @@ public class Student {
         return age;
     }
 
-    public void setAge(final Integer age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
@@ -39,7 +39,7 @@ public class Student {
         return name;
     }
 
-    public void setName(final String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
