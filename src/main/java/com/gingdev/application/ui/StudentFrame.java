@@ -1,4 +1,4 @@
-package com.gingdev.swing;
+package com.gingdev.application.ui;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
